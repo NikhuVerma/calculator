@@ -11,6 +11,8 @@ exports.calculate = function(req, res) {
   });
 
   var operations = {
+    //Using +a + +b will add to numbers and a + b will concatenate strings
+    // i.e 42+0=420
     'add':      function(a,b) { return +a + +b },
     'subtract': function(a,b) { return a - b },
     'multiply': function(a,b) { return a * b },
