@@ -26,7 +26,7 @@ Settings
   displayName: 'Archive files'
   inputs:
   rootFolderOrFiles: '$(System.DefaultworkingDirectory)'
-  includeRootFolder:false
+  includeRootFolder: false
 
 Settings
 - task: PublishBuildArtifacts@1
