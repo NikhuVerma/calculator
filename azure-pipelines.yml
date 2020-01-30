@@ -23,11 +23,11 @@ steps:
   
 Settings
 -task: ArchiveFiles@2
- displayName: 'Archive files'
- inputs:
- rootFolderFiles '$(System.DefaultworkingDIrectory)'
- includeRootFolder:false
+  displayName: 'Archive files'
+  inputs:
+  rootFolderFiles '$(System.DefaultworkingDIrectory)'
+  includeRootFolder:false
 
 Settings
 - task: PublishBUildArtifacts@1
-  displayName: 'Publish artifacts: drop'
+   displayName: 'Publish artifacts: drop'
