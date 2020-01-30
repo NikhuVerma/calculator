@@ -25,9 +25,9 @@ Settings
 -task: ArchiveFiles@2
   displayName: 'Archive files'
   inputs:
-  rootFolderFiles '$(System.DefaultworkingDIrectory)'
+  rootFolderOrFiles: '$(System.DefaultworkingDirectory)'
   includeRootFolder:false
 
 Settings
-- task: PublishBUildArtifacts@1
+- task: PublishBuildArtifacts@1
    displayName: 'Publish artifacts: drop'
