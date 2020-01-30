@@ -21,13 +21,9 @@ steps:
     npm test
   displayName: 'npm install build and test'
   
-Settings
--task: ArchiveFiles@2
-  displayName: 'Archive files'
+steps:
+- task: ArchiveFiles@2
   inputs:
-  rootFolderOrFiles: '$(System.DefaultworkingDirectory)'
-  includeRootFolder: false
-
-Settings
+    rootFolderOrFile: '$(build.sourcesDirectory)'
+    includeRootFolder: false
 - task: PublishBuildArtifacts@1
-   displayName: 'Publish artifacts: drop'
